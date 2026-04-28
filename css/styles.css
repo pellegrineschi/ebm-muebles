@@ -2,6 +2,21 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* NAVBAR */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar-logo {
+  height: 95px;
+  max-height: 95px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 /* HERO */
 
 .hero {
@@ -42,6 +57,276 @@ body {
 /* CTA */
 .cta {
   background: #f5f5f5;
+}
+
+/* CATALOGO */
+.catalogo-hero {
+  background: #f5f5f5;
+  padding: 70px 0;
+}
+
+.catalogo-hero-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.catalogo-card {
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.catalogo-card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.catalogo-card-body {
+  padding: 20px;
+}
+
+.catalogo-card-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.catalogo-card-body p {
+  color: #666;
+  min-height: 72px;
+}
+
+/* TRABAJO */
+.trabajo-hero {
+  min-height: 620px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trabajo-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trabajo-hero-overlay {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.72), rgba(0,0,0,0.25));
+}
+
+.trabajo-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+}
+
+.beneficio-card {
+  height: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 24px;
+  background: #fff;
+}
+
+.beneficio-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #198754;
+  font-weight: 700;
+}
+
+.beneficio-card h3,
+.proceso-card h3 {
+  font-size: 1.2rem;
+}
+
+.beneficio-card p,
+.proceso-card p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.trabajo-proceso {
+  background: #f5f5f5;
+}
+
+.proceso-card {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.proceso-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.proceso-card div {
+  padding: 20px;
+}
+
+.proceso-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #198754;
+}
+
+.trabajo-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.trabajo-collage img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trabajo-collage img:first-child {
+  margin-top: 45px;
+}
+
+.trabajo-lista {
+  padding-left: 18px;
+  color: #444;
+}
+
+.trabajo-lista li {
+  margin-bottom: 10px;
+}
+
+.trabajo-cta {
+  padding: 70px 0;
+  background: #1f2a24;
+  color: #fff;
+}
+
+.trabajo-cta p {
+  color: rgba(255,255,255,0.75);
+}
+
+/* CONTACTO */
+.contacto-hero {
+  padding: 70px 0;
+  background: #f5f5f5;
+}
+
+.contacto-hero h1 {
+  font-size: clamp(2.1rem, 4vw, 4rem);
+}
+
+.contacto-hero-img,
+.contacto-referencia-img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contacto-info,
+.contacto-form {
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #fff;
+  padding: 28px;
+}
+
+.contacto-info-item {
+  padding: 20px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.contacto-info-item span {
+  display: block;
+  margin-bottom: 6px;
+  color: #198754;
+  font-weight: 700;
+}
+
+.contacto-info-item strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contacto-info-item p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.contacto-form .form-control,
+.contacto-form .form-select {
+  min-height: 48px;
+  border-color: #dedede;
+}
+
+.contacto-form textarea.form-control {
+  min-height: 150px;
+}
+
+.contacto-referencia {
+  background: #f5f5f5;
+}
+
+@media (max-width: 575px) {
+  .catalogo-hero {
+    padding: 45px 0;
+  }
+
+  .catalogo-hero-img,
+  .catalogo-card-img {
+    height: 220px;
+  }
+
+  .catalogo-card-body p {
+    min-height: auto;
+  }
+
+  .trabajo-hero,
+  .trabajo-hero-overlay {
+    min-height: 560px;
+  }
+
+  .trabajo-hero-overlay {
+    background: rgba(0,0,0,0.62);
+  }
+
+  .trabajo-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .trabajo-collage img,
+  .trabajo-collage img:first-child {
+    height: 240px;
+    margin-top: 0;
+  }
+
+  .contacto-hero {
+    padding: 45px 0;
+  }
+
+  .contacto-hero-img,
+  .contacto-referencia-img {
+    height: 260px;
+  }
+
+  .contacto-info,
+  .contacto-form {
+    padding: 22px;
+  }
 }
 
 /* WhatsApp flotante */
