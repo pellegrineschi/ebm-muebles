@@ -349,6 +349,61 @@ body {
   background: var(--color-fondo-suave);
 }
 
+/* FOOTER */
+.site-footer {
+  padding: 58px 0 24px;
+  background: var(--color-principal);
+  color: rgba(255,255,255,0.72);
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 18px;
+  filter: invert(1);
+}
+
+.site-footer h5 {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.site-footer p {
+  max-width: 420px;
+  margin-bottom: 0;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer li {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.72);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-acento);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 42px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.55);
+  font-size: 0.92rem;
+}
+
 @media (max-width: 575px) {
   .catalogo-hero {
     padding: 45px 0;
@@ -394,6 +449,10 @@ body {
   .contacto-info,
   .contacto-form {
     padding: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
   }
 }
 
